@@ -1,0 +1,6 @@
+# Notes
+
+Programming telling a computer exactly what to do in a step by step layout of instructions.
+With suitable Programming, each computer can basically do all the things that any other computer can do.
+
+Reasons to learn programming
