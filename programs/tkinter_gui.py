@@ -23,6 +23,9 @@ def helloCallBack():
    tkMessageBox.showinfo( "Hello Python", "Hello World")
 
 B = tkinter.Button(window, text ="Hello", command = helloCallBack, fg="blue")
+# hello_button = tkinter.Button(window, text ="Hello", command = helloCallBack, fg="blue")
+# # hello_button.place(bordermode=tkinter.OUTSIDE, height=100, width=100)
+# hello_button.place(relx=0.5, rely=0.5, anchor=tkinter.CENTER)
 D = tkinter.Button(window, text ="How are you doing?", command = helloCallBack)
 
 # set background and foreground with keywords bg="orange" and fg="red"
