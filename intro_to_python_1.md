@@ -19,7 +19,7 @@ Introduction to Programming using Python
   - If/else/elif
   - For Loops
   - While Loops
-- Data Structures Intoduction (Dictionaries)
+- Data Structures Introduction (Dictionaries)
 - Using Functions
 
 ## Useful resources
@@ -32,5 +32,9 @@ https://www.pythonlikeyoumeanit.com/index.html
 ### Sample code snippet
 
 ```python
+
+
 print("Hello World!")
+
+
 ```
