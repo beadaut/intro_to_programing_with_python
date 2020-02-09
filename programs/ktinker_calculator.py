@@ -6,7 +6,7 @@ import tkinter
 window = tkinter.Tk()
 # add a label to the window
 window.title("Calculator")
-window.geometry("380x280")
+window.geometry("380x380")
 window.resizable(False, False)
 
 
@@ -184,8 +184,6 @@ equal_button.grid(column=3, row=3, columnspan=2, sticky="WE")
 # equal_button.pack()
 
 bottom_frame.pack()
-
-
 
 # run the window
 window.mainloop()

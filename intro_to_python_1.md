@@ -38,3 +38,14 @@ print("Hello World!")
 
 
 ```
+
+## Part 1
+
+### printing
+
+To print to the terminal in python is as simple as 
+
+```python
+print("whatever you want")
+```
+
