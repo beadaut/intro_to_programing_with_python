@@ -22,15 +22,18 @@ Introduction to Programming using Python
 - Data Structures Introduction (Dictionaries)
 - Using Functions
 
-
 <!-- page break -->
 <div style="page-break-after: always;"></div>
 
-## Part 1
+## Python Programming Essentials - Part 1
+
+### [Python Interactive Environment](https://docs.microsoft.com/en-us/visualstudio/python/python-interactive-repl-in-visual-studio?view=vs-2019)
+
+In this tutorial, we are going to be using the python interactive environment, through the command line. The Interactive environment lets you enter arbitrary Python code and see immediate results. This way of coding helps you learn and experiment with APIs and libraries, and to interactively develop working code to include in your projects. This is a very great feature of the python programming language. In VScode, we will access this by typing `python` in the terminal at the bottom of the window.
 
 ### Printing
 
-To print to the terminal in python is as simple as 
+To print to the terminal in python is as simple as;
 
 ```python
 print("whatever you want")
@@ -213,7 +216,6 @@ person_dict = {"name": "Nikola Tesla", "age": 86, "parents": ["Milutin Tesla", "
 
 One important note about dictionaries is that the elements cannot be retrieved in a particular order since they are accessed using the `keys`.
 
-
 ## Good and bad variable names
 
 The following are [rules or guidelines](http://makemeanalyst.com/python-programming/variable-names-and-keywords/) in other to use a suitable variable name in python;
@@ -232,7 +234,8 @@ class=5
 global=10
 all@1=100
 ```
-## Functions
+
+## Introduction to Functions
 
 Blocks of code that achieve special defined purposes. Helps to keep our code organized and easy to reuse. A function is defined as in;
 
