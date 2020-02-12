@@ -164,7 +164,7 @@ When we call other packages, we call them in form of functions. More advanced us
 <!-- page break -->
 <div style="page-break-after: always;"></div>
 
-## Useful Resources and Bibliography
+## Bibliography
 
 1. https://www.pythonlikeyoumeanit.com/index.html
 2. John M. Zelle, Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates, Inc., 2004

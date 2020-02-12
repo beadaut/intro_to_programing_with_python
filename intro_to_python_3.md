@@ -2,8 +2,9 @@
 
 ## Outline
 - If/else/elif
-- For Loops
-- While Loops
+- Loops
+  - For Loop
+  - While Loop
 - More on Iterables
 
 ## If/else/elif
@@ -50,9 +51,62 @@ else: # the final condition can be specified implicitly. That is, score >= 70
 
 Basically, the interpreter goes through every condition one after the other and once a condition is satisfied, it leaves the control structure and continues running the rest of the program. If none of the conditions are satisfied, it runs the final `else` statement. We may also have a multiple condition control structure that does not use the else statement, hence nothing is done if no condition is satisfied.
 
-## For Loops
+## Loops
 
-## While Loops
+Loops are a way for programmers to execute sequence of statements multiple times in succession. It usually involves a variable that increases or decreases in succession. Python program has two of such kind of constructs - `For Loops` and `While Loops`.
+
+### For Loop
+
+This is a kind of loop that will execute a definite number of times, also known as `Definite Loops`. The number of times it will execute is usually defined at the beginning of the loop, then the program exits the loop after has been executed the specified number of times. Here is a fun example called "I Love you 3000".
+
+```python
+for i range(3000):
+    print("I love you ", i)
+```
+
+```bash
+I love you  0
+I love you  1
+I love you  2
+...
+I love you  2997
+I love you  2998
+I love you  2999
+```
+
+Note the use of the keyword `range`. This is a simple way in Python to give numbers between an upper and lower bound. The full definition is `range(start: int, stop: int, step: int=...)`. That is we can specify the start value, the stop value and the increment value. In the case that we supplied only one value, then it starts at 0 and the step is `1`. This is a very handy keyword or function. We can also have decreasing range, such as;
+
+```python
+for i in range(10, 0, -1):
+    print(i, " left")
+```
+
+```bash
+10  left
+9  left
+8  left
+7  left
+6  left
+5  left
+4  left
+3  left
+2  left
+1  left
+```
+
+## While Loop
+
+This is a kind of loop with a condition on how the loop is exited. It can result in an indefinite loop depending on the condition. This is best explained by an example;
+
+```python
+i = 10
+while i > 0:
+    print(i, " left")
+    i = i - 1 # without this line the loop will continue indefinitely
+
+```
+
+This basically has the same result has the previous example with the `For Loop`. However, here we explicitly specify the condition to exit the loop. Note that this prone to a bug known as the `infinite lopp` since we have to keep track of the condition to ensure that it can be met.
 
 ## More on Iterables
 
@@ -60,7 +114,7 @@ Basically, the interpreter goes through every condition one after the other and 
 - Functions to manipulate iterables
 - Pros and cons of each class
 
-## Useful Resources and Bibliography
+## Bibliography
 
 1. https://www.pythonlikeyoumeanit.com/index.html
 2. John M. Zelle, Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates, Inc., 2004
