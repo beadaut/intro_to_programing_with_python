@@ -108,11 +108,39 @@ while i > 0:
 
 This basically has the same result has the previous example with the `For Loop`. However, here we explicitly specify the condition to exit the loop. Note that this prone to a bug known as the `infinite lopp` since we have to keep track of the condition to ensure that it can be met.
 
-## More on Iterables
+## For Loop + Iterables
 
-- How to use iterables
-- Functions to manipulate iterables
-- Pros and cons of each class
+We can use a `For Loop` to access sequentially the elements of an `iterable` such as `list` and `strings`. This is very helpful when we want to perform an operation on each element of the `iterable`. For example
+
+```python
+# given points on an `x` axis, we want to find a corresponding points on the `y` axis
+x = [-5, -2, 0, 1, 3, 6]
+for t in x:
+    y = t**2 + 3*t + 5
+    print("x: ", t, "y: ", y)
+```
+
+In this example, the calculation is performed on each element `t` of List `x`. A similar operation can be done for a string variable;
+
+```python
+string = "MISSISSIPPI"
+for s in string:
+    print(s)
+```
+
+```bash
+M
+I
+S
+S
+I
+S
+S
+I
+P
+P
+I
+```
 
 ## Bibliography
 
