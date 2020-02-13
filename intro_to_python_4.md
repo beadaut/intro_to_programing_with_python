@@ -44,7 +44,7 @@ Some examples of the above operations are shown below.
 
 ## Dictionaries
 
-Dictionaries are a special iterable that uses `keys` instead of `indices`. The `keys` cannot be only numbers but also strings. Therefore the elements of a dictionary consist of a `key` and `value` pairs, just like words and definitions in an English dictionary.
+Dictionaries are another class of iterable or `collections` that uses `keys` instead of `indices` for elements in the object. The `keys` may not be only numbers but also strings. Therefore the elements of a dictionary consist of a `key` and `value` pairs, just like words and definitions in an English dictionary. This allows us to easily find information stored in them by using the defined `key`.
 
 ```python
 person_dict = {"name": "Nikola Tesla", "age": 86, "parents": ["Milutin Tesla", "Duka Tesla"] }
@@ -53,17 +53,30 @@ person_dict = {"name": "Nikola Tesla", "age": 86, "parents": ["Milutin Tesla", "
 person_dict["Nationality"] = "American"
 ```
 
+To get the value associated with a key, we simply do
+
+```python
+>>>person_dict["name"]
+Nikola Tesla
+```
+
+Note that if the `key` is not in the dictionary, a `KeyError` is thrown by the python interpreter.
 One important note about dictionaries is that the elements cannot be retrieved in a sequential order since they are accessed using the `keys`.
 
 ### Dictionaries Operations and Functions
 
-Dictionaries can be manipulated with the following operations. Refer to [this page]() for an introduciton to dictionaries.
+Dictionaries can be manipulated with the following operations. 
 
-| Function | Meaning|
-|-|-|
-|{Dict}.key() | 
+| Function          | Meaning                                                                         |
+| ----------------- | ------------------------------------------------------------------------------- |
+| {Dict}.keys()     | Returns a sequence of keys.                                                     |
+| {Dict}.values()   | Returns a sequence of values.                                                   |
+| {Dict}.items()    | Returns a sequence of tuples (`key`, `value`) representing the key-value pairs. |
+| del {Dict}[{key}] | deletes the specified entry.                                                    |
+| {Dict}.clear()    | Deletes all entries                                                             |
 
 ## How `Lists` are created vs how `Dictionaries` are created - Time Complexity.
+
 
 
 ## Bibliography
