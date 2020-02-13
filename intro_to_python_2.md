@@ -69,7 +69,7 @@ nums_tuple[3] = 22
 
 We can also consider string as iterables, since we can retrieve elements of a string just like in the lists and tuples. A `for loop` can also be called on it just like in tuples and lists. We will talk more about this in later sections.
 
-### Dictionaries
+### Dictionaries (was skipped in the video, so will be added in the next part)
 
 Dictionaries are a special iterable that uses `keys` instead of `indices`. The `keys` cannot be only numbers but also strings. Therefore the elements of a dictionary consist of a `key` and `value` pairs, just like words and definitions in an English dictionary.
 

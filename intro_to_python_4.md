@@ -1,12 +1,71 @@
 # Python Programming Essentials - Data Structure and Manipulation
 
+In this post, we are going to look a little deeper in how to manipulate the different data structures we have seen so far in Python programming. Those are `Lists` and `Dictionaries`. More importantly, we will look at the built-in functions for each class and use this knowledge to solve a very common technical problem.
+
 ## Outline
-- Lists Manipulation
+
+- Lists Operations and Functions
 - Dictionaries Manipulation
 - Time complexity (data cost)
 - Data structure problem
 
+## Lists Operations and Functions
+
+We have seen some examples on how to use a list in previous sections. Here we will only outline the various popular operations and functions that can be carried out on a `List`.
+
+| Operations          | Meaning                                                     |
+| ------------------- | ----------------------------------------------------------- |
+| {List} + {List}     | Concatenation                                               |
+| {List} * {int}      | Repeat `List` {int} number of times                         |
+| len({List})         | Find the length of `List`                                   |
+| {List}.append(x)    | Adds element `x` to end of list                             |
+| {List}.sort()       | Return a sorted `List`                                      |
+| {List}.reverse()    | Reverse the `List`                                          |
+| {List}.index(x)     | Returns the index of first occurrences of `x` in list       |
+| {List}.insert(i, x) | Inserts `x` into list at index `i`.                         |
+| {List}.count(x)     | Returns the number of occurrences of `x` in list            |
+| {List}.remove(x)    | Deletes the first occurrence in the list                    |
+| {List}.pop(i)       | Deletes the `i`th element of the list and returns its value |
+
+Some examples of the above operations are shown below.
+
+```python
+>>> [1, 2, 3, 4] + [5, 6, 7, 8] # List concatenation
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+>>> [1, 2, 3, 4] * 2 # List repetition
+[1, 2, 3, 4, 1, 2, 3, 4]
+
+>>> a = [1, 2, 3, 4]
+>>> a.append(5)
+>>> a
+[1, 2, 3, 4, 5]
+```
+
+## Dictionaries
+
+Dictionaries are a special iterable that uses `keys` instead of `indices`. The `keys` cannot be only numbers but also strings. Therefore the elements of a dictionary consist of a `key` and `value` pairs, just like words and definitions in an English dictionary.
+
+```python
+person_dict = {"name": "Nikola Tesla", "age": 86, "parents": ["Milutin Tesla", "Duka Tesla"] }
+
+# a new key value pair can be assigned in the variable as follows
+person_dict["Nationality"] = "American"
+```
+
+One important note about dictionaries is that the elements cannot be retrieved in a sequential order since they are accessed using the `keys`.
+
+### Dictionaries Operations and Functions
+
+Dictionaries can be manipulated with the following operations. Refer to [this page]() for an introduciton to dictionaries.
+
+| Function | Meaning|
+|-|-|
+|{Dict}.key() | 
+
+## How `Lists` are created vs how `Dictionaries` are created - Time Complexity.
+
 
 ## Bibliography
 
-1. https://www.pythonlikeyoumeanit.com/index.html
+1. John M. Zelle, Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates, Inc., 2004
