@@ -1,4 +1,4 @@
-# Python Programming Essentials - Data Structure and Manipulation
+# Python Programming Essentials - Data Structures and Manipulation
 
 In this post, we are going to look a little deeper in how to manipulate the different data structures we have seen so far in Python programming. Those are `Lists` and `Dictionaries`. More importantly, we will look at the built-in functions for each class and use this knowledge to solve a very common technical problem.
 
@@ -75,10 +75,11 @@ Dictionaries can be manipulated with the following operations.
 | del {Dict}[{key}] | deletes the specified entry.                                                    |
 | {Dict}.clear()    | Deletes all entries                                                             |
 
-## How `Lists` are created vs how `Dictionaries` are created - Time Complexity.
+## Difference between `List` and `Dictionary` data structure
 
-
+We have seen that `Lists` are ordered while `Dictgionaries` are not, hence lists are indexed with integers while dictionaries uses keys to obtain the value pair. However, because of how elements are accessed in both data structures, it is more efficient to use a dictionary for lookup of elements because it takes less time to traverse in the dictionary than a list. What this means is that in a list when an element is retrieved, each element is checked from the first one until the desired index but in dictionaries, the key is 'connected' directly to the address of the value so it takes less time to retrieve the value.
 
 ## Bibliography
 
 1. John M. Zelle, Python Programming: An Introduction to Computer Science. Franklin, Beedle & Associates, Inc., 2004
+2. https://www.geeksforgeeks.org/difference-between-list-and-dictionary-in-python/
