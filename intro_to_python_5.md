@@ -1,6 +1,6 @@
 # Solving Programing Problems with Python (LeetCode 3)
 
-<brief>
+In this video post, I talk about the general approach to solving a programming problem, while utilizing the ideas we have covered so far in this series. To drive home this idea, I use a popular problem from Leetcode.com.
 
 ## Outline (use a sample problem)
 
@@ -93,6 +93,6 @@ answer = lengthOfLongestSubstring("baaaccb")
 print(answer)
 ```
 
-Go ahead and see if you can try some other problems on the [Leetcode](leetcode.com) website using this idea.
+Go ahead and see if you can try some other problems on the [Leetcode](leetcode.com) website using the idea in this post.
 
 See you in the next post.
