@@ -77,7 +77,7 @@ Dictionaries can be manipulated with the following operations.
 
 ## Difference between `List` and `Dictionary` data structure
 
-We have seen that `Lists` are ordered while `Dictgionaries` are not, hence lists are indexed with integers while dictionaries uses keys to obtain the value pair. However, because of how elements are accessed in both data structures, it is more efficient to use a dictionary for lookup of elements because it takes less time to traverse in the dictionary than a list. What this means is that in a list when an element is retrieved, each element is checked from the first one until the desired index but in dictionaries, the key is 'connected' directly to the address of the value so it takes less time to retrieve the value.
+We have seen that `Lists` are ordered while `Dictionaries` are not, hence lists are indexed with integers while dictionaries uses keys to obtain the value pair. However, because of how elements are accessed in both data structures, it is more efficient to use a dictionary for lookup of elements because it takes less time to traverse in the dictionary than a list. What this means is that in a list when an element is retrieved, each element is checked from the first one until the desired index but in dictionaries, the key is 'connected' directly to the address of the value so it takes less time to retrieve the value.
 
 ## Bibliography
 

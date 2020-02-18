@@ -34,4 +34,65 @@ This is not a real code but it shows the steps someone might take to solve the p
 5. Return largest lenght
 ```
 
-## Bibliography
+Next, we will create a program structure from the pseudocode. This will be the structure that we follow when finally write our code. In our case, we will write actual code but only lines that show the parts of the solution. In reality, we can do something like this, bearing in mind that we will use functions as much as possible;
+
+```python
+# function to find lenght
+def lengthofLongestSubstring(string):
+  # check edge cases
+
+  # initialize variables
+
+  # for loop to check string
+  
+  # if seen
+
+  # check longest length.
+
+  # return result
+  pass
+
+
+# test an example
+answer = lengthOfLongestSubstring("baaaccb")
+print(answer)
+```
+
+With this down, we can begin to fill in the code to the different parts of the program. At the end, we will have this final code (See the YouTube Video for the process).
+
+```python
+# function to find lenght
+def lengthOfLongestSubstring(s):
+    # check edge cases
+    if s == "":
+        return 0
+
+    # initialize variables
+    tail = 0
+    cur_len = 0
+    seen = {s[0]: 0}
+    longest = 1
+
+    # for loop to check string
+    for head in range(1, len(s)):
+        # if seen
+        if s[head] in seen:
+            tail = max(seen[s[head]] + 1, tail)
+        seen[s[head]] = head
+        cur_len = head - tail + 1
+
+        # check longest length.
+        if cur_len > longest:
+            longest = cur_len
+
+    # return result
+    return longest
+
+# test an example
+answer = lengthOfLongestSubstring("baaaccb")
+print(answer)
+```
+
+Go ahead and see if you can try some other problems on the [Leetcode](leetcode.com) website using this idea.
+
+See you in the next post.
